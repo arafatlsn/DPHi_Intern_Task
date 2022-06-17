@@ -1,0 +1,52 @@
+.banner-downside-parent-contain {
+  background-color: #002a3b;
+}
+
+.banner-downside-parent {
+  width: 77%;
+  margin: auto;
+  padding: 73px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ai-model-img-div {
+  background-color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai-model-parent{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 22px;
+  position: relative;
+}
+
+.ai-model-text-div h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+  font-family: Inter;
+}
+
+.ai-model-text-div p {
+  color: white;
+  margin: 0;
+  font-size: 16px;
+  font-family: Inter;
+}
+
+.devider{
+  width: 1px;
+  height: 38px;
+  background: white;
+}
