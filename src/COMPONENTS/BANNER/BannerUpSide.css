@@ -1,0 +1,47 @@
+.banner-upside-parent {
+  padding: 185px 273px 142.3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-heading {
+  font-size: 63px;
+  color: white;
+  font-weight: 600;
+  line-height: 58px;
+}
+
+.border-line {
+  width: 9.81px;
+  height: 115.91px;
+  background-color: #FFCE5C;
+  position: absolute;
+  top: 249px;
+  left: 190px;
+}
+
+.banner-text{
+  width: 531px;
+  font-size: 18px;
+  color: #ECECEC;
+  font-weight: 500;
+  margin: 38px 0;
+  line-height: 28px;
+}
+
+.chlng-button{
+  width: 198px;
+  height: 47px;
+  color: #003145;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  border-style: none;
+  border-radius: 10px;
+  line-height: 18px;
+}
+
+.rocket-img{
+  width: 322px;
+  object-fit: contain;
+}
