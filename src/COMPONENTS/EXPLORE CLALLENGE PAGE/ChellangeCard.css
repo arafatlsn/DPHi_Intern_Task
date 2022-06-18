@@ -1,0 +1,74 @@
+.card-parent {
+  width: 354px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.status-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.status-button {
+  width: 87px;
+  height: 21px;
+  border-style: none;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  border-radius: 5px;
+  margin-top: 27px;
+  margin-bottom: 24px;
+  color: #666666;
+}
+
+.card-text-div h3 {
+  text-align: center;
+  font-size: 16px;
+  padding: 0 54px;
+  font-weight: 600;
+}
+
+.countdown-div {
+  margin-top: 18px;
+}
+
+.countdown-div p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #444444;
+  margin-bottom: 8px;
+}
+
+.countdown-div h3 {
+  font-size: 18px;
+  color: #454545;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.participate-now-div {
+  display: flex;
+  justify-content: center;
+}
+
+.participate-now-div button {
+  margin: 0 auto 27px;
+  width: 182px;
+  height: 42px;
+  border-style: none;
+  background-color: #44924c;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}

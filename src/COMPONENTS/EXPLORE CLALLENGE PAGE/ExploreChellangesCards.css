@@ -1,0 +1,13 @@
+.challenges-card-container {
+  padding-top: 75px;
+  background-color: #003145;
+}
+
+.challenges-card-parent{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 55px;
+}
