@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: center;
 }
 
 .ai-model-img-div {
@@ -48,5 +49,6 @@
 .devider{
   width: 1px;
   height: 38px;
-  background: white;
+  background: #C4C4C4;
+  margin: 0;
 }

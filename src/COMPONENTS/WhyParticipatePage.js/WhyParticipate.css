@@ -1,0 +1,47 @@
+.why-participate-parent {
+  padding-top: 90px;
+  padding-bottom: 125px;
+  width: 78%;
+  margin: auto;
+}
+
+.ai-participate-heading {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 72px;
+}
+
+.ai-participate-heading span {
+  color: #0fa958;
+}
+
+.why-participate-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  gap: 2.5%;
+}
+
+.why-participate-card {
+  width: 542px;
+  height: 276px;
+  background-color: #f8f9fd;
+  border-radius: 20px;
+  padding: 62px 33px;
+  box-sizing: border-box;
+  margin-bottom: 2.5%;
+}
+
+.why-participate-img img {
+  width: 38px;
+  margin-bottom: 11.72px;
+}
+
+.why-participate-img h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: -3%;
+}
