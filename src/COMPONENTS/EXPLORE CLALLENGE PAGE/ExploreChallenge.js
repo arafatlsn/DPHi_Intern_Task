@@ -1,6 +1,5 @@
 import React from 'react';
 import ExploreSearch from './ExploreSearch';
-import './ExploreChallenge.css'
 import ExploreChellangesCards from './ExploreChellangesCards';
 
 const ExploreChallenge = () => {

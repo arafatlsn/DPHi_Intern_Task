@@ -55,7 +55,7 @@ const ChellangeCard = ({ el }) => {
         setMinutesTime(minutes);
         setStatus("Upcoming");
       }
-    }, 1500);
+    });
   };
 
   startTimer();

@@ -2,10 +2,11 @@
   padding-top: 72px;
   padding-bottom: 98px;
   background-color: #002A3B;
+  height: fit-content;
 }
 
 .explore-challenge-search-parent {
-  width: fit-content;
+  /* width: fit-content; */
   margin: auto;
 }
 
@@ -19,6 +20,20 @@
 
 .search-div {
   margin-top: 64px;
+  /* width: fit-content; */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.search-field-side{
+  grid-column: 4 / 10;
+  justify-self: center;
+}
+
+.search-filter-side{
+  justify-self: left;
+  grid-column: 10 / 11;
+  margin-left: -2rem;
 }
 
 .search-div button {
@@ -30,7 +45,21 @@
   border-color: none;
 }
 
-.search-div input {
+.input-search-field:focus {
+  outline-style: none;
+}
+
+.search-plus-filter-container{
+  height: fit-content;
+  width: 70%;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: 2fr 1fr;
+}
+
+.input-search-field {
   width: 780px;
   height: 50px;
   border-top-right-radius: 10px;
@@ -40,6 +69,6 @@
   font-weight: 600;
 }
 
-.search-div input:focus {
-  outline-style: none;
-}
+/* .filter-div{
+  grid-column: 11 /13 ;
+} */

@@ -1,0 +1,53 @@
+.filter-container {
+  background-color: white;
+  width: fit-content;
+  padding: 12px 23px;
+  border-radius: 12px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.filter-text {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: Inter;
+}
+
+.arrow-symbol {
+  margin-left: 0.8rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.filter-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-categories-container{
+  width: 290px;
+}
+
+.status-heading{
+  margin-bottom: 18px;
+}
+
+.status-heading span {
+  font-family: Inter;
+  color: #666666;
+  line-height: 20px;
+}
+
+.all-status label{
+  font-size: 14px;
+  color: #858585;
+  line-height: 22.65px;
+  font-family: Inter;
+  cursor: pointer;
+}
+
+.each-option-div{
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
