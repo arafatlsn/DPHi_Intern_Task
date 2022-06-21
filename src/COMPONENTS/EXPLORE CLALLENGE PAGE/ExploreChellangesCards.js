@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import ChellangeCard from "./ChellangeCard";
 import useData from "../../Hooks/useData";
 import "./ExploreChellangesCards.css";
+import { FilterContext } from "../../App";
 
 const ExploreChellangesCards = () => {
-  const allChallenges = useData();
-  console.log(allChallenges);
+  const { dataArr } = useData();
+  const { filter } = useContext(FilterContext)
+
 
   return (
     <div className="challenges-card-container">
       <div className="challenges-card-parent">
-        {allChallenges.map((el) => (
-          <ChellangeCard el={el}></ChellangeCard>
+        {dataArr.map((el) => (
+          <ChellangeCard filter={filter} el={el}></ChellangeCard>
         ))}
       </div>
     </div>

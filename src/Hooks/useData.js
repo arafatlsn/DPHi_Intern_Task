@@ -1,4 +1,5 @@
 const useData = () => {
+
   const dataArr = [
     {
       id: 1,
@@ -55,7 +56,8 @@ const useData = () => {
       end: "Apr 29, 22 23:59:59 GMT+5:30",
     },
   ];
-  return dataArr;
+
+  return { dataArr };
 };
 
 export default useData;
