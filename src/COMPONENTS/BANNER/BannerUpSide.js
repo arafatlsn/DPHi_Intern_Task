@@ -1,6 +1,7 @@
 import React from "react";
 import "./BannerUpSide.css";
 import rocketImg from "../../Assets/Icons/PicsArt_04-14-04.42 1.png";
+import { Link } from "react-router-dom";
 
 const BannerUpSide = () => {
   return (
@@ -20,7 +21,7 @@ const BannerUpSide = () => {
           </h3>
         </div>
         <div>
-          <button className="chlng-button">Create Challenge</button>
+          <Link to={'create-challenge'}><button className="chlng-button">Create Challenge</button></Link>
         </div>
       </div>
       <div>

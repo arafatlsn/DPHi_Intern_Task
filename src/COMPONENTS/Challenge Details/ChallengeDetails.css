@@ -3,9 +3,8 @@
 }
 
 .challenge-heading {
-  width: 87.5%;
   margin: auto;
-  padding: 41px 0;
+  padding: 41px 120px;
 }
 
 .challenge-heading p {
@@ -17,8 +16,7 @@
 }
 
 .challenge-details-parent {
-  width: 87.5%;
-  margin: auto;
+  padding: 41px 120px;
 }
 
 .label-input-div {
