@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./ChellangeCard.css";
 import checkImg from "../../Assets/Icons/Group.png";
 import useStatus from "../../Hooks/useStatus";
+import { Link } from "react-router-dom";
 
 const ChellangeCard = ({ el, filter }) => {
   const { id, name, img, level, description, start, end } = el;
@@ -56,52 +57,54 @@ const ChellangeCard = ({ el, filter }) => {
                 <h3>{end.split("G")[0]}</h3>
               )}
             </div>
-            <div className="participate-now-div">
+            <Link to={`/particpate/${id}`} className="participate-now-div">
               <button>
                 {" "}
                 <img src={checkImg} alt="" /> Participate Now
               </button>
-            </div>
+            </Link>
           </div>
         </div>
       );
-    } 
+    }
   }
 
-  if(!filter.length) {
-    return <div className="card-parent">
-      <div>
-        <img src={img} alt="" />
+  if (!filter.length) {
+    return (
+      <div className="card-parent">
+        <div>
+          <img src={img} alt="" />
+        </div>
+        <div className="card-text-div">
+          <div className="status-button-container">
+            <button
+              className="status-button"
+              style={{ backgroundColor: `${bg}` }}
+            >
+              {status}
+            </button>
+          </div>
+          <h3>{name}</h3>
+          <div className="countdown-div">
+            <p>{countdown}</p>
+            {minutes ? (
+              <h3>
+                <span>{days}</span> : <span>{hours}</span> :{" "}
+                <span>{minutes}</span>{" "}
+              </h3>
+            ) : (
+              <h3>{end.split("G")[0]}</h3>
+            )}
+          </div>
+          <Link to={`/particpate/${id}`} className="participate-now-div">
+            <button disabled={status==='Ended'}>
+              {" "}
+              <img src={checkImg} alt="" /> Participate Now
+            </button>
+          </Link>
+        </div>
       </div>
-      <div className="card-text-div">
-        <div className="status-button-container">
-          <button
-            className="status-button"
-            style={{ backgroundColor: `${bg}` }}
-          >
-            {status}
-          </button>
-        </div>
-        <h3>{name}</h3>
-        <div className="countdown-div">
-          <p>{countdown}</p>
-          {minutes ? (
-            <h3>
-              <span>{days}</span> : <span>{hours}</span> :{" "}
-              <span>{minutes}</span>{" "}
-            </h3>
-          ) : (
-            <h3>{end.split("G")[0]}</h3>
-          )}
-        </div>
-        <div className="participate-now-div">
-          <button>
-            {" "}
-            <img src={checkImg} alt="" /> Participate Now
-          </button>
-        </div>
-      </div>
-    </div>;
+    );
   }
 };
 

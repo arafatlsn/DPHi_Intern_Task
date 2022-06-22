@@ -1,0 +1,118 @@
+.challenge-heading-parent {
+  background-color: #f8f9fd;
+}
+
+.challenge-heading {
+  width: 87.5%;
+  margin: auto;
+  padding: 41px 0;
+}
+
+.challenge-heading p {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Inter;
+  line-height: 29px;
+  margin: 0;
+}
+
+.challenge-details-parent {
+  width: 87.5%;
+  margin: auto;
+}
+
+.label-input-div {
+  margin-top: 33px;
+}
+
+.label-input-div label {
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 19.36px;
+  color: #333333;
+  margin-bottom: 19px;
+}
+
+.label-input-div input {
+  width: 453px;
+  height: 39px;
+  border: 1px solid #b7b7b7;
+  border-radius: 5px;
+  padding: 0 3rem 0 1rem;
+  font-weight: 500;
+  font-family: Inter;
+  color: #444444;
+  line-height: 19.36px;
+}
+
+.calander-icon {
+  margin-left: -40px;
+}
+
+.text-field {
+  width: 817px;
+  height: 252px;
+  border: 1px solid #b7b7b7;
+  border-radius: 5px;
+  padding: 21px 26px;
+}
+
+.challange-img-div {
+  width: 297px;
+  height: 218px;
+  background-color: #f8f9fd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.challange-img-div img {
+  width: 249px;
+  height: 122.39px;
+  margin-top: 22px;
+  object-fit: contain;
+}
+
+.change-img-text {
+  align-self: start;
+  padding: 29px 21px;
+}
+
+.change-img-text p {
+  margin: 0;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  color: #44924c;
+  line-height: 16.94px;
+  cursor: pointer;
+}
+
+.img-icon {
+  font-size: 16px;
+}
+
+.arrow-icon {
+  font-size: 20px;
+}
+
+.level-secect-div {
+  width: 236px;
+}
+
+.save-button-div {
+  margin-top: 33px;
+  padding-bottom: 52px;
+}
+
+#save-button {
+  width: 214px;
+  height: 46px;
+  background-color: #44924c;
+  border-radius: 10px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  border-style: none;
+}

@@ -3,6 +3,9 @@ import NavBar from "./COMPONENTS/NAV BAR/NavBar";
 import HomePage from "./COMPONENTS/HOME PAGE/HomePage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createContext, useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import ParticipateNow from "./COMPONENTS/PARTCIPATE PAGE/ParticipateNow";
+import ChallengeDeatils from "./COMPONENTS/Challenge Details/ChallengeDeatils";
 
 export const FilterContext = createContext();
 function App() {
@@ -12,7 +15,11 @@ function App() {
     <FilterContext.Provider value={{ filter, setFilter, allFilter, setAllFilter }}>
       <div style={{ fontFamily: "Poppins" }}>
         <NavBar></NavBar>
-        <HomePage></HomePage>
+        <Routes>
+          <Route path={'/'} element={<HomePage></HomePage>}/>
+          <Route path={'/particpate/:id'} element={<ParticipateNow></ParticipateNow>} />
+          <Route path={'/challenge-details/:id'} element={<ChallengeDeatils></ChallengeDeatils>} />
+        </Routes>
       </div>
     </FilterContext.Provider>
   );
