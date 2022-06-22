@@ -20,7 +20,6 @@
 
 .search-div {
   margin-top: 64px;
-  /* width: fit-content; */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -94,6 +93,14 @@
   font-weight: 600;
 }
 
-/* .filter-div{
-  grid-column: 11 /13 ;
-} */
+@media screen and (max-width: 1900px) {
+  .search-field-side {
+    grid-column: 3 / 11;
+    justify-self: center;
+  }
+  
+  .search-filter-side {
+    justify-self: left;
+    grid-column: 11 / 12;
+  }
+}

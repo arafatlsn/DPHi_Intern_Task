@@ -51,3 +51,9 @@
   align-items: center;
   gap: 9px;
 }
+
+@media screen and (max-width: 1900px) {
+  .filter-categories-container{
+    width: 190px;
+  }
+}

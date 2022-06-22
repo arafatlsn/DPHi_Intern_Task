@@ -47,7 +47,7 @@ const useStatus = (start, end) => {
         setMinutesTime(minutes);
         setStatus("Upcoming");
       }
-    }, 5000);
+    }, 1000);
   };
 
   startTimer();
