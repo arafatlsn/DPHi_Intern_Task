@@ -7,7 +7,11 @@ import { Routes, Route } from "react-router-dom";
 import ParticipateNow from "./COMPONENTS/PARTCIPATE PAGE/ParticipateNow";
 import ChallengeDeatils from "./COMPONENTS/Challenge Details/ChallengeDeatils";
 import CreateChallenge from "./COMPONENTS/Challenge Details/CreateChallenge";
-
+import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 export const FilterContext = createContext();
 function App() {
   const [filter, setFilter] = useState([]);
