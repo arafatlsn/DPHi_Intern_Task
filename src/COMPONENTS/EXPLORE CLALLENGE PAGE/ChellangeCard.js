@@ -3,11 +3,16 @@ import "./ChellangeCard.css";
 import checkImg from "../../Assets/Icons/Group.png";
 import useStatus from "../../Hooks/useStatus";
 import { Link } from "react-router-dom";
+import { FilterContext } from "../../App";
 
 const ChellangeCard = ({ el, filter }) => {
-  const { id, name, img, level, description, start, end } = el;
+  const { id, name, img, level, start, end } = el;
 
   const { status, days, hours, minutes } = useStatus(start, end, el);
+  const { searchText } = useContext(FilterContext);
+  if(!name.toLowerCase().includes(searchText.toLowerCase())){
+    return;
+  }
 
   let bg;
 

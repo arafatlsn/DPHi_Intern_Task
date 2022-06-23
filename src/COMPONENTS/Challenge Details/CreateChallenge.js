@@ -4,8 +4,15 @@ import calander from "../../Assets/Icons/Vector (1).png";
 import { Form } from "react-bootstrap";
 import { MdCloudUpload } from 'react-icons/md'
 import './CreateChallenge.css'
+import useData from "../../Hooks/useData";
 
 const CreateChallenge = () => {
+
+  const { dataArr } = useData()
+  const submitForm = e => {
+    e.preventDefault();
+  }
+
   return (
     <div className="challenge-details-container">
       <div className="challenge-heading-parent">
@@ -14,7 +21,7 @@ const CreateChallenge = () => {
         </div>
       </div>
       <div className="challenge-details-parent">
-        <form className="form div">
+        <form className="form div" onSubmit={submitForm}>
           <div className="label-input-div">
             <label htmlFor="name">Challenge Name</label>
             <br />

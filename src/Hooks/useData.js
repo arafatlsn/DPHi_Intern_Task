@@ -56,7 +56,6 @@ const useData = () => {
       end: "Apr 29, 22 23:59:59 GMT+5:30",
     },
   ];
-
   return { dataArr };
 };
 

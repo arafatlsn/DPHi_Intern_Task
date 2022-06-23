@@ -15,7 +15,6 @@ const ParticipateNow = () => {
     const findChallenge = dataArr.find((el) => el.id === Number(id));
     setChallenge(findChallenge);
   }, [id]);
-  console.log(challenge);
 
   let levelStatus;
   if (level === "Easy") {

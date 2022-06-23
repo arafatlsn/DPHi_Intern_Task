@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./ExploreSearch.css";
 import searchImg from "../../Assets/Icons/Vector.png";
 import FilterDropdown from "./FilterDropdown";
 import { MdCancel } from 'react-icons/md'
+import { FilterContext } from "../../App";
 
 const ExploreSearch = () => {
   
+  const [inputText, setInputText] = useState('');
   const [primaryFilter, setPrimaryFilter] = useState([]);
+  const { searchText, setSearchText } = useContext(FilterContext);
 
   return (
     <div className="explore-challenge-container">
@@ -15,10 +18,10 @@ const ExploreSearch = () => {
         <div>
           <div className="search-div">
             <div className="search-field-side">
-              <button className="search-button">
+              <button onClick={() => setSearchText(inputText)} className="search-button">
                 <img src={searchImg} alt="" />
               </button>
-              <input className="input-search-field" type="text" placeholder="Search" />
+              <input onBlur={e => setInputText(e.target.value)} className="input-search-field" type="text" placeholder="Search" />
               <div className="search-for-div">
                 {
                   primaryFilter?.map(el => {

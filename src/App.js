@@ -11,9 +11,10 @@ import CreateChallenge from "./COMPONENTS/Challenge Details/CreateChallenge";
 export const FilterContext = createContext();
 function App() {
   const [filter, setFilter] = useState([]);
+  const [searchText, setSearchText] = useState('');
   const [allFilter, setAllFilter] = useState(true);
   return (
-    <FilterContext.Provider value={{ filter, setFilter, allFilter, setAllFilter }}>
+    <FilterContext.Provider value={{ filter, setFilter, allFilter, setAllFilter, searchText, setSearchText }}>
       <div style={{ fontFamily: "Poppins" }}>
         <NavBar></NavBar>
         <Routes>
